@@ -1,0 +1,5 @@
+# Cognito - User pool
+CognitoUserPool:
+  Type: AWS::Cognito::UserPool
+  Properties:
+    UserPoolName: ${self:provider.environment.COGNITO_USER_POOL}

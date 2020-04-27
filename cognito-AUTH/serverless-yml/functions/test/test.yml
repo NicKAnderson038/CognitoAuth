@@ -1,0 +1,9 @@
+testEndpoint:
+  handler: services/test/test.test
+  events:
+    - http:
+        path: test
+        method: GET
+        cors: true
+        integration: lambda-proxy
+        authorizer: aws_iam

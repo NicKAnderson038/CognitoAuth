@@ -1,0 +1,4 @@
+# USER_INFO_DB: ${self:service}-list-of-pts-${opt:stage, self:provider.stage}
+COGNITO_USER_POOL: ${env:COGNITO}_user_pool_${opt:stage, self:provider.stage}
+COGNITO_USER_POOL_CLIENT: ${env:COGNITO}_client_${opt:stage, self:provider.stage}
+COGNITO_IDENTITY_POOL_NAME: ${env:COGNITO}_identity_pool_${opt:stage, self:provider.stage}
